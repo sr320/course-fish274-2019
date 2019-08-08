@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Syllabus
-catalog: FISH 497
+catalog: FISH 274
 credits: 3
 semester: Spring 2019
 professor: Dr. Steven Roberts
