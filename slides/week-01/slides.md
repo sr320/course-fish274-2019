@@ -1,10 +1,10 @@
 class: center, middle
 
-# FISH 497
+# FISH 274
 ## Data Science for SAFS
 
 
-https://sr320.github.io/course-fish497-2019
+https://sr320.github.io/course-fish274-2019
 
 
 Steven Roberts
@@ -87,7 +87,7 @@ class: center, middle
 
 
 
-### End of this week
+### This week
 
 - Computer set-up with Bash & R
 
