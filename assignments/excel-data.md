@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Data Organization in Spreadsheets                
 language: Excel
-exercises: ['Exercise Template']
+
 ---
 
 #### Learning Objectives
