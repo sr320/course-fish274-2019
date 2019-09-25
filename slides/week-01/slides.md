@@ -89,7 +89,7 @@ class: center, middle
 
 ### This week
 
-- Computer set-up with Bash & R
+- Excel and Preparing for Next Week
 
 
 
