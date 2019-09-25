@@ -17,12 +17,6 @@ language: Excel
 > - Demonstrate best practices for entering dates in spreadsheets.
 > - Store spreadsheet data in universal file formats.
 
-{% include reading.html %}
-
-
-
-
-<!-- End of Assignments Template - Be sure to keep the include statements -->
 
 
 ## 1) [Week 1 "Quiz" on Canvas](https://canvas.uw.edu/courses/1342171/quizzes/1159687)
