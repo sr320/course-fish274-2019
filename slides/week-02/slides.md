@@ -1,14 +1,13 @@
 class: center, middle
 
-# FISH 497
+# FISH 274
 ## Data Science for SAFS
 
 
-https://sr320.github.io/course-fish497-2019/
+https://genefish.co
 
 
 Steven Roberts
-
 
 
 ---

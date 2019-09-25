@@ -4,7 +4,7 @@ class: center, middle
 ## Data Science for SAFS
 
 
-https://sr320.github.io/course-fish274-2019
+https://genefish.co
 
 
 Steven Roberts
