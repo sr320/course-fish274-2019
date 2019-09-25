@@ -19,12 +19,13 @@ exercises: ['Exercise Template', 'Exercise Template']
 
 {% include reading.html %}
 
-{% include assignment.html %}
+
+
 
 <!-- End of Assignments Template - Be sure to keep the include statements -->
 
 
-## 1) [Week 1 "Quiz" on Canvas](https://canvas.uw.edu/courses/1273428/quizzes/1124477)
+## 1) [Week 1 "Quiz" on Canvas](https://canvas.uw.edu/courses/1342171/quizzes/1159687)
 
 
 ## 2) [Summary Sheets](https://canvas.uw.edu/courses/1273428/assignments/4761919) Due Thursdays
