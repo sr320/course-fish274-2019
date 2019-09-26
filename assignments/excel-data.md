@@ -22,5 +22,5 @@ language: Excel
 ## 1) [Week 1 "Quiz" on Canvas](https://canvas.uw.edu/courses/1342171/quizzes/1159687)
 
 
-## 2) [Summary Sheets](https://canvas.uw.edu/courses/1273428/assignments/4761919) Due Thursdays
+## 2) [Summary Sheets](https://canvas.uw.edu/courses/1273428/assignments/4761919) Due Thursdays (Except this one!)
 _This is a sheet of paper where you use a writing instrument to create a mindmap / cheat sheet._
