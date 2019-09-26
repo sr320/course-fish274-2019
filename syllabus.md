@@ -91,10 +91,7 @@ Students completing this course will be able to:
 This class is taught using a partially flipped, learner-centered, approach, because
 learning to program and work with data requires actively working on
 computers. Flipped classes work well for all kinds of content, but I think they
-work particularly well for computer oriented classes. If you're interested in
-knowing more take a look at this great
-[info-graphic](http://www.knewton.com/flipped-classroom-2/).
-
+work particularly well for computer oriented classes. 
 
 
 ## Course Policies
