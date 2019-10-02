@@ -1,13 +1,15 @@
 class: center, middle
 
-# FISH 497
+# FISH 274
 ## Data Science for SAFS
 
 R
 
+https://genefish.co
 
 
 Steven Roberts
+
 
 
 
@@ -109,7 +111,7 @@ Steven Roberts
 - Enter a name for this new folder (or “directory”), and choose a convenient location for it. This will be your working directory (e.g., ~/fish497-w3)
 - Click on Create project
 - Download the [code handout](http://www.datacarpentry.org/R-ecology-lesson/code-handout.R), place it in your working directory and rename it (e.g.,  code-script.R).
-- Under the Files tab on the right of the screen, click on New Folder and create a folder named data within your newly created working directory (e.g., ~/fish497-w3/data)
+- Under the Files tab on the right of the screen, click on New Folder and create a folder named data within your newly created working directory (e.g., ~/fish274-w3/data)
 
 ---
 
