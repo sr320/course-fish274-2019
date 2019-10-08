@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570554099413.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "429252789",
+    "id" : "BDF92AC0",
+    "lastKnownWriteTime" : 1570558493,
+    "last_content_update" : 1570558493388,
+    "path" : "~/Documents/GitHub/course-fish274-2019/R-projects/week_3/scripts/class-work.R",
+    "project_path" : "scripts/class-work.R",
+    "properties" : {
+        "cursorPosition" : "82,28",
+        "scrollLine" : "74",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
