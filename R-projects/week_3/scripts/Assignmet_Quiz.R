@@ -38,10 +38,20 @@ print(mass_g)
 
 # EXERCISE 4 - BUILT IN FUNCTIONS.
 
+abs(-15.5)
 
+round(4.483847, digits = 1)
 
+round(3.8)
 
+toupper("species")
 
+tolower("SPECIES")
+
+mynum <- sqrt(2.6)
+round(mynum, digits = 2)
+
+round(sqrt(2.6), digits = 2)
 
 
 
