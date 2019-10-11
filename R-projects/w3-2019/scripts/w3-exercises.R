@@ -58,6 +58,44 @@ round(4.483847, digits = 2)
 round(3.8)
 toupper("species")
 
+# 5
+site1_g_carbon_m2_day <- 5
+site2_g_carbon_m2_day <- 2.3
+site1_area_m2 <- 200
+site2_area_m2 <- 450
+site1_npp_day <- site1_g_carbon_m2_day * site1_area_m2
+site2_npp_day <- site2_g_carbon_m2_day * site2_area_m2
+print(site1_npp_day)
+print(site2_npp_day)
+
+
+
+
+#Modify the code to produce the following items and print them out in order:
+  
+  #The sum of the total daily NPP for the two sites combined.
+#The difference between the total daily NPP for the two sites. We only want an absolute difference, so use abs() function to make sure the number is positive.
+#The total NPP over a year for the two sites combined.
+
+#[1] 1000
+
+#[1] 1035
+
+#[1] 2035
+
+#[1] 35
+
+#[1] 742775
+
+print(site2_npp_day + site1_npp_day)
+
+print(abs(site2_npp_day-site1_npp_day))
+
+
+print((site2_npp_day + site1_npp_day) * 365)
+
+
+
 
 
 
@@ -125,6 +163,19 @@ height[length > 2.5]
 
 
 
+# 9 One of your collaborators has posted a comma-delimited text file online for you to analyze. The file contains dimensions of a series of shrubs (ShrubID, Length, Width, Height) and they need you to determine their volumes (l * w * h). You could do this using a spreadsheet, but the project that you are working on is going to be generating lots of these files so you decide to write a program to automate the process.
 
+##Download the data, use read.csv() to import it into R, and then use the $ operator to print out:
+  
+  #The shrub lengths
+###The volume of each of the shrubs
 
+shrub_data <- read.csv("data/shrub-dimensions-labeled.csv")
 
+length(shrub_data)
+
+shrub_data$length
+
+shrub_data["length"]
+
+shrub_data[["length"]]
