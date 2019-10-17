@@ -162,6 +162,10 @@ length > 2.5 # will return logicals with TRUE for the indices that meet the cond
 height[length > 2.5]
 
 
+ht_gr_2.5 <- height[length > 2.5]
+
+ht_gr_2.5
+
 
 # 9 One of your collaborators has posted a comma-delimited text file online for you to analyze. The file contains dimensions of a series of shrubs (ShrubID, Length, Width, Height) and they need you to determine their volumes (l * w * h). You could do this using a spreadsheet, but the project that you are working on is going to be generating lots of these files so you decide to write a program to automate the process.
 

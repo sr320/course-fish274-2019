@@ -78,7 +78,7 @@ max(density_ha)
 min(density_ha)
 sum(density_ha)
 
-
+sites <- c("a", "a", "b", "c")
 density_ha <- c(2.8, 3.2, 1.5, 3.8)
 area_ha <- c(3, 5, 1.9, 2.7)
 
@@ -89,6 +89,24 @@ total_number
 total_number[sites != 'a']
 
 
+# Data frames
+
+surveys <- data.frame(sites, density_ha, area_ha)
+
+str(surveys)
+nrow(surveys)
+ncol(surveys)
 
 
+surveys$area_ha
+
+
+surveys["area_ha"]
+
+
+
+shrub_data <- read.csv('data/shrub-dimensions-labeled.csv')
+
+animals <- c("mouse", "rat", "dog", "cat")
+animals[animals == "cat" | animals == "rat"]
 
