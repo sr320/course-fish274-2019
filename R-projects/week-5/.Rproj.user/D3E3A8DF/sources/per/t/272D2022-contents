@@ -1,6 +1,6 @@
 
 library(ggplot2)
-
+library(dplyr)
 
 
 size_mr_data <- data.frame(
@@ -98,6 +98,16 @@ ggplot(Mammal_lif, aes(x = mass.g., y = newborn.g.)) +
 avian <- read.csv("data/avian_ssd_jan07.txt", sep="\t", na.strings = c("-999", "-999.0"))
 
 
+data_birds <- read.csv("http://www.esapubs.org/archive/ecol/E088/096/avian_ssd_jan07.txt",sep ="\t",na.strings = c("-999", "-999.00"))
+
+ggplot(data = data_birds) +
+  geom_histogram(aes(x = F_mass)) +
+  labs(x = "Female Mass (g)")
+
+ggplot(data = data_birds) +
+  geom_histogram(aes(x = F_mass), fill = 'blue')+
+  labs(x = "Female Mass (g)")+
+  scale_x_log10()
 
 
 ggplot(avian, aes(x = F_mass)) +
@@ -143,20 +153,18 @@ ggplot() +
   facet_wrap(~Family) +
   labs(x = "Wing Size")
 
-
+#QUESTION 4
 #-- Sexual Dimorphism Data Manipulation --
 
 
 library(dplyr)
 
+#done aboave
+avian <- read.csv("data/avian_ssd_jan07.txt", sep="\t", na.strings = c("-999", "-999.0"))
 
-large_n_families <- avian %>%
-  filter(!is.na(M_mass), !is.na(F_mass)) %>%
-  group_by(Family) %>%
-  summarize(num_species = n())
 
-large_n_families
 
+#this code creates a data frame with a column of Family IDs and a column of the number of species in the associated family that have non-null masses for both males and females and only includes families with more than 25 species
 large_n_families <- avian %>%
   filter(!is.na(M_mass), !is.na(F_mass)) %>%
   group_by(Family) %>%
@@ -170,5 +178,46 @@ large_n_families
 #Now join this with your original data to get the subset of your data with more than 25 species in each family. inner_join() only keeps rows where the joining field(s) occur in both tables, so since you’ve already removed families without a lot of species from large_n_families, they will be removed from the resulting data frame.
 
 
-myjoin <- inner_join(avian, large_n_families, by = "species_id")
+myjoin <- inner_join(avian, large_n_families, by = "Family")
 
+#Now, remake your original graph using only the data on families with greater than 25 species.
+
+ggplot() +
+  geom_histogram(data = myjoin, aes(x = M_mass), fill = "blue", alpha = 0.3) +
+  geom_histogram(data = myjoin, aes(x = F_mass), fill = "yellow", alpha = 0.3) +
+  scale_x_log10() +
+  facet_wrap(~Family) +
+  labs(x = "Mass(g)")
+
+
+#Sexual size dimorphism doesn’t seem to show up clearly when visually comparing the distributions of male and female masses across species. Maybe the differences among species are too large relative to the differences between sexes to see what is happening; so, you decide to calculate the difference between male and female masses for each species and look at the distribution of those values for all species in the data.
+
+#In the original data frame, use mutate() to create a new column which is the relative size difference between female and male masses
+
+#(F_mass - M_mass) / F_mass
+
+#and then make a single histogram that shows all of the species-level differences. Add a vertical line at 0 difference for reference
+
+avian_new <- mutate(avian, rel_size =(F_mass - M_mass) / F_mass)
+
+ggplot(avian_new) +
+  geom_histogram(mapping = aes(x = rel_size)) +
+  geom_vline(mapping = aes(xintercept = 0)) +
+  labs(x = "Relative Mass")
+
+
+#Combine the two other tasks to produce histograms of the relative size difference for each family, only including families with more than 25 species.
+
+
+large_avian_new <- inner_join(avian_new, large_n_families, by = "Family")
+
+ggplot(data = large_avian_new) +
+  geom_histogram(aes(x =rel_size)) +
+  geom_vline(aes(xintercept = 0)) +
+  facet_wrap(~Family) +
+  labs(x = "Relative Size") 
+
+
+#save the figure from task 3 as a jpg file with the name sexual_dimorphism_histogram.jpg
+
+ggsave("best_plot_ever.jpg")
