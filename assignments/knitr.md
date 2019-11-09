@@ -21,7 +21,6 @@ exercises: ['Knitr']
 
 
 
-{% include assignment.html %}
 
 <!-- End of Assignments Template - Be sure to keep the include statements -->
 
