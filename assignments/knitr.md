@@ -27,17 +27,15 @@ exercises: ['Knitr']
 
 ****
 
-### [Canvas Quiz](https://canvas.uw.edu/courses/1273428/quizzes/1124478)
+### [Canvas Quiz](https://canvas.uw.edu/courses/1342171/quizzes/1159686)
 
 ---
 
-**Exercise 1**    
-Continue working on updating your repo from last week, with an emphasis on generating improved plots.
-
----
-
-**Exercise 2**    
-Create an R Markdown file in your repo that nicely formats your prose, code and plots.
-Be sure to include prose the briefly describes your process. Also include a footnote.
+**Mini Project question**
+This week you will need to create a new project in the class organization on github that will serve as your mini-project repository.
+The name of the repo should be in the format FirstName-OneWordDataRelated.
+For example if my data was on scallop size, my repo name would be `Steven-scallop`
+Be sure to set up directories properly.
+Create an Rmd file that reads in your data and use dyplr start to manipulate the data and ggplot to create at least one plot.
+Your Rmd file should nicely format your prose, code and plots. Be sure to include prose the briefly describes your process. A
 Using knitr export the file to HTML and save in `output` directory.
----
